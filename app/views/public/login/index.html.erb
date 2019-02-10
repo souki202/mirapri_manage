@@ -1,0 +1,5 @@
+<h2>ログイン<h2>
+<%= form_tag( './complete' , remote: true) do |f| %>
+    <%= text_field_tag (:user_id) %>
+    <%= password_field_tag (:password) %>
+<% end %>
