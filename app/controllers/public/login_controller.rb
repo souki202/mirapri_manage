@@ -4,8 +4,9 @@ class Public::LoginController < ApplicationController
   end
 
   def complete
-    user_id = params[:user_ids]
-    password = params[:password]
+    @title = 'ログイン中'
+    @user_id = params[:user_ids]
+    @password = params[:password]
     render :index
   end
 end

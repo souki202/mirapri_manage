@@ -1,5 +1,16 @@
-<h2>ログイン<h2>
-<%= form_tag( './complete' , remote: true) do |f| %>
-    <%= text_field_tag (:user_id) %>
-    <%= password_field_tag (:password) %>
-<% end %>
+<h2>ログイン</h2>
+<div id="login_form_container">
+    <%= form_for( './complete' , remote: true) do |f| %>
+        <%= f.label :user_id, "ユーザID" %>
+        <%= f.text_field  :user_id, class: '', placeholder: "ユーザID" %>
+        
+        <%= f.label :password, "パスワード" %>
+        <%= f.password_field :password, class: '', placeholder: "パスワード" %>
+
+        <%= submit_tag "ログイン" %>
+    <% end %>
+    <a href="/public/registration/">新規登録</a>
+</div>
+
+<%= @user_id %>
+<%= @password %>

@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   namespace :public do
+    get 'registration/index'
+    get 'registration/confirm'
+  end
+  get 'registration/index'
+  get 'registration/confirm'
+  namespace :public do
     get 'login/index'
     post 'login/complete'
   end

@@ -1560,3 +1560,758 @@ Processing by Public::LoginController#index as HTML
 Completed 200 OK in 831ms (Views: 804.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 11:57:59 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (3.4ms)
+  Rendered commons/_header.html.erb (0.2ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 512ms (Views: 495.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 11:59:51 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.9ms)
+  Rendered commons/_header.html.erb (0.2ms)
+  Rendered commons/_footer.html.erb (0.3ms)
+Completed 200 OK in 144ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:01:14 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.6ms)
+  Rendered commons/_header.html.erb (0.4ms)
+  Rendered commons/_footer.html.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:01:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.8ms)
+  Rendered commons/_header.html.erb (0.3ms)
+  Rendered commons/_footer.html.erb (0.2ms)
+Completed 200 OK in 131ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:01:54 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (1.1ms)
+  Rendered commons/_header.html.erb (0.2ms)
+  Rendered commons/_footer.html.erb (0.3ms)
+Completed 200 OK in 148ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:02:14 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (181.3ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `placeholder' for #<#<Class:0x00007f27be2181e8>:0x00007f27be2167f8>):
+    1: <h2>ログイン<h2>
+    2: <%= form_tag( './complete' , remote: true) do |f| %>
+    3:     <%= label_tag (:user_id), "ユーザID" %>
+    4:     <%= text_field_tag (:user_id), placeholder => "ユーザID" %>
+    5:     
+    6:     <%= label_tag (:password), "パスワード" %>
+    7:     <%= password_field_tag (:password), placeholder => "パスワード" %>
+  
+app/views/public/login/index.html.erb:4:in `block in _app_views_public_login_index_html_erb___1442418845515702690_69904335160580'
+app/views/public/login/index.html.erb:2:in `_app_views_public_login_index_html_erb___1442418845515702690_69904335160580'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:03:05 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...d_tag (:user_id), :placeholder"ユーザID" );@output_buffer...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+...tag (:password), :placeholder "パスワード" );@output_bu...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:03:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+..._tag (:user_id), :placeholder = "ユーザID" );@output_buff...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+...tag (:password), :placeholder = "パスワード" );@output_...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:04:05 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._tag (:user_id), :placeholder "ユーザID" );@output_buffer...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+...tag (:password), :placeholder "パスワード" );@output_bu...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:04:57 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...ld_tag :user_id, :placeholder "ユーザID" );@output_buffer...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+...d_tag :password, :placeholder "パスワード" );@output_bu...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:05:06 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+...ld_tag :user_id, :placeholder = "ユーザID" );@output_buff...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+...d_tag :password, :placeholder = "パスワード" );@output_...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:06:31 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+...ld_tag :user_id, :placeholder = "ユーザID" );@output_buff...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+...d_tag :password, :placeholder = "パスワード" );@output_...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:50:33 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+...ag :user_id, '', :placeholder = "ユーザID" );@output_buff...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+...g :password, '', :placeholder = "パスワード" );@output_...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:52:52 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+...g 'user_id', '', :placeholder = "ユーザID" );@output_buff...
+...                              ^
+/usr/local/src/app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+... 'password', '', :placeholder = "パスワード" );@output_...
+...                              ^):
+  
+app/views/public/login/index.html.erb:4: syntax error, unexpected '=', expecting ')'
+app/views/public/login/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 12:52:59 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "ユーザID":String):
+    1: <h2>ログイン<h2>
+    2: <%= form_tag( './complete' , remote: true) do |f| %>
+    3:     <%= label_tag :user_id, "ユーザID" %>
+    4:     <%= text_field_tag 'user_id', '', placeholder = "ユーザID" %>
+    5:     
+    6:     <%= label_tag :password, "パスワード" %>
+    7:     <%= password_field_tag 'password', '', placeholder = "パスワード" %>
+  
+app/views/public/login/index.html.erb:4:in `block in _app_views_public_login_index_html_erb___1442418845515702690_69904332490540'
+app/views/public/login/index.html.erb:2:in `_app_views_public_login_index_html_erb___1442418845515702690_69904332490540'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 13:02:14 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/usr/local/src/app/views/public/login/index.html.erb:3: syntax error, unexpected '=', expecting keyword_end
+'.freeze;     = text_field_tag 'datetime_int...
+              ^
+/usr/local/src/app/views/public/login/index.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/public/login/index.html.erb:3: syntax error, unexpected '=', expecting keyword_end
+app/views/public/login/index.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 13:47:59 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 13:55:10 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (44.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (42.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateAccounts (20190210132352)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-10 14:04:39 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateAccounts (20190210132352)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateAccounts (20190210132352)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateAccounts (20190210132352)
+  [1m[35m (44.0ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` varchar(255), `email` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190210132352_create_accounts.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190210132352')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-02-10 14:27:24', '2019-02-10 14:27:24')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateAccounts (20190210132352)
+  [1m[35m (24.4ms)[0m  [1m[35mDROP TABLE `accounts`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.3ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20190210132352'[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1305942884708306040', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateAccounts (20190210132352)
+  [1m[35m (43.6ms)[0m  [1m[35mCREATE TABLE `accounts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190210132352_create_accounts.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190210132352')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1305942884708306040')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 03:27:06 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (1.1ms)
+  Rendered commons/_header.html.erb (0.4ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 240ms (Views: 199.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 03:47:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (1.1ms)
+  Rendered commons/_header.html.erb (0.3ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 183ms (Views: 157.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/public/login/complete" for 172.20.0.1 at 2019-02-11 03:47:19 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#complete as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 382ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= page_title @title %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7: 
+  
+app/helpers/application_helper.rb:4:in `+'
+app/helpers/application_helper.rb:4:in `page_title'
+app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb___1393615869779470438_69904332838100'
+app/controllers/public/login_controller.rb:9:in `complete'
+Started POST "/public/login/complete" for 172.20.0.1 at 2019-02-11 03:47:22 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#complete as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 371ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= page_title @title %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7: 
+  
+app/helpers/application_helper.rb:4:in `+'
+app/helpers/application_helper.rb:4:in `page_title'
+app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb___1393615869779470438_69904352861460'
+app/controllers/public/login_controller.rb:9:in `complete'
+Started POST "/public/login/complete" for 172.20.0.1 at 2019-02-11 03:47:54 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#complete as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (1.1ms)
+  Rendered commons/_header.html.erb (0.4ms)
+  Rendered commons/_footer.html.erb (0.5ms)
+Completed 200 OK in 726ms (Views: 725.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:17:57 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (179.1ms)
+  Rendered commons/_header.html.erb (0.6ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 945ms (Views: 929.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:25:30 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    1: <h2>ログイン<h2>
+    2: <%= form_for( './complete' , remote: true) do |f| %>
+    3:     <%= label :user_id, "ユーザID" %>
+    4:     <%= f.text_field  :user_id, '', class: '', placeholder: "ユーザID" %>
+    5:     
+    6:     <%= label :password, "パスワード" %>
+    7:     <%= f.password_field :password, '', class: '', placeholder: "パスワード" %>
+  
+app/views/public/login/index.html.erb:4:in `block in _app_views_public_login_index_html_erb___1442418845515702690_69904326965780'
+app/views/public/login/index.html.erb:2:in `_app_views_public_login_index_html_erb___1442418845515702690_69904326965780'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:25:47 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    4:     <%= f.text_field  :user_id,  class: '', placeholder: "ユーザID" %>
+    5:     
+    6:     <%= label :password, "パスワード" %>
+    7:     <%= f.password_field :password, '', class: '', placeholder: "パスワード" %>
+    8: 
+    9:     <%= submit_tag "ログイン" %>
+   10: <% end %>
+  
+app/views/public/login/index.html.erb:7:in `block in _app_views_public_login_index_html_erb___1442418845515702690_69904333490640'
+app/views/public/login/index.html.erb:2:in `_app_views_public_login_index_html_erb___1442418845515702690_69904333490640'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:25:56 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (4.9ms)
+  Rendered commons/_header.html.erb (0.6ms)
+  Rendered commons/_footer.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:26:01 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (2.5ms)
+  Rendered commons/_header.html.erb (0.3ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 189ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:26:06 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (3.4ms)
+  Rendered commons/_header.html.erb (0.5ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 222ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:26:14 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (2.3ms)
+  Rendered commons/_header.html.erb (0.5ms)
+  Rendered commons/_footer.html.erb (0.5ms)
+Completed 200 OK in 222ms (Views: 202.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:29:42 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (2.9ms)
+  Rendered commons/_header.html.erb (0.5ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 546ms (Views: 527.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/registration/" for 172.20.0.1 at 2019-02-11 05:29:44 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/public/registration"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:29:48 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (2.3ms)
+  Rendered commons/_header.html.erb (0.3ms)
+  Rendered commons/_footer.html.erb (0.4ms)
+Completed 200 OK in 147ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/login/index" for 172.20.0.1 at 2019-02-11 05:32:46 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::LoginController#index as HTML
+  Rendering public/login/index.html.erb within layouts/application
+  Rendered public/login/index.html.erb within layouts/application (3.5ms)
+  Rendered commons/_header.html.erb (0.7ms)
+  Rendered commons/_footer.html.erb (0.5ms)
+Completed 200 OK in 231ms (Views: 208.4ms | ActiveRecord: 0.0ms)
+
+
