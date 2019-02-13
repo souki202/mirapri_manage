@@ -11,9 +11,27 @@
 
   <body>
     <div id="container">
-      <%= render "commons/header" %>
+      <% if logged_in? %>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Account <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><%= link_to "Profile", current_account %></li>
+          <li><%= link_to "Settings", '#' %></li>
+          <li class="divider"></li>
+          <li>
+            <%= link_to "Log out", logout_path, method: "delete" %>
+          </li>
+        </ul>
+      <% else %>
+        <%= render "commons/header" %>
+      <% end %>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
       <%= yield %>
       <%= render "commons/footer" %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>

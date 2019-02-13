@@ -2,7 +2,7 @@
 
 one:
   id: MyString
-  user_id: MyString
+  account_id: MyString
   email: MyString
   password: MyString
   created_at: MyString
@@ -10,7 +10,7 @@ one:
 
 two:
   id: MyString
-  user_id: MyString
+  account_id: MyString
   email: MyString
   password: MyString
   created_at: MyString
