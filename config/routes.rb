@@ -5,7 +5,6 @@ Rails.application.routes.draw do
 
   get 'login' => 'login#index'
   post 'login'=> 'login#complete'
-  delete 'logout'  => 'sessions#destroy'
   get 'login/index'
   post 'login/complete'
 
