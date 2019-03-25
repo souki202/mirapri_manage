@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   resources :accounts
   
+  get 'view_equip' => 'equipment#show'
+  get 'edit_equip' => 'equipment#edit'
 end
